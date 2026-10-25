@@ -1,6 +1,6 @@
 {
   "as_of": "2026-10-25",
-  "repository_purpose": "个人私有 Skill 与 Plugin 归档；仅收录通过来源与脱敏审查的条目",
+  "repository_purpose": "公开的个人 Skill 与 Plugin 集合；仅收录通过来源与脱敏审查的条目，各自许可保留",
   "reviewed_personal_skills": 53,
   "included_standalone_skills": 40,
   "included_plugin_skills": 2,
@@ -1344,5 +1344,7 @@
   "source_index": "THIRD_PARTY_NOTICES.md",
   "license_policy": "LICENSES.md",
   "documentation_index": "docs/index.md",
-  "verified_external_skills": 36
+  "verified_external_skills": 36,
+  "repository_url": "https://github.com/VF98/how-skills",
+  "repository_visibility": "public"
 }

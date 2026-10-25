@@ -2,7 +2,7 @@
 
 | 需要了解 | 入口 |
 | --- | --- |
-| 集合范围、安装与选择 | [README](../README.md) |
+| 集合范围、安装与选择 | [README](../README.md)、[公开使用指南](public-use.md) |
 | 逐项 Skill 清单与收录状态 | [审查总览](review-summary.md)、[catalog.json](../catalog.json) |
 | 目录与规范参考 | [仓库布局](repository-layout.md) |
 | 新增、更新和验证 | [CONTRIBUTING](../CONTRIBUTING.md) |
