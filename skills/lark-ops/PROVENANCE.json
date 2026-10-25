@@ -1,0 +1,10 @@
+{
+  "classification": "local-personal-source",
+  "distribution": "private-archive-only",
+  "license": "no-new-open-source-license",
+  "verification": "Archived from the user-owned local personal skill collection. No third-party provenance asserted. Original statements retained.",
+  "original_local_file_sha256": {
+    "SKILL.md": "d791d40387ebf2eda86a4496008400f0c0c19ec7896e69048f79ebf220db0ca1",
+    "agents/openai.yaml": "a90d3b300ec25476b81be54b30af8e527664654a90353e979568e48183b3bb3d"
+  }
+}

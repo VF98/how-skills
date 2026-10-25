@@ -1,0 +1,13 @@
+{
+  "classification": "local-personal-source",
+  "distribution": "private-archive-only",
+  "license": "No additional open-source license granted by this archive.",
+  "verification": "Archived from the user-owned local personal skill collection. No third-party provenance asserted.",
+  "original_local_file_sha256": {
+    "SKILL.md": "f56c6aadc5f300d928bb5a87e7e648d6326698431e81b30037dc53a0e2e3f993",
+    "agents/openai.yaml": "b170139b4b1ca89776109b03953e271ad9ad8460ca0aa1e6af23b40a4925a909",
+    "scripts/test-with-compile-lock.sh": "8f95b1f43987e0ea43062fc44eb0f9e4218f74b4f7bbdca82f26d371c5109dd3",
+    "scripts/with-compile-lock.sh": "451b7187c01e82080f2e14222c0d967004b95d8fd5d56599bec68d01321c3b52",
+    "scripts/with_compile_lock.py": "46bfea1d31d94e524dd0f9caa7fdc711a201ed7f8d9158819cdcf4b471a97d42"
+  }
+}

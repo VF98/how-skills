@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compile Coordinator"
+  short_description: "Serialize builds and use a safe CPU budget"
+  default_prompt: "Use $compile-coordinator to run this build without competing with other agents."

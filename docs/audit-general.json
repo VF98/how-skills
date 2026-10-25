@@ -1,0 +1,699 @@
+{
+  "audit_date": "2026-10-25",
+  "scope": "All 39 general skills in the local personal skill collection, excluding system, bundled plugin, company and robot skill groups.",
+  "summary": {
+    "audited": 39,
+    "copied": 39,
+    "included": 36,
+    "needs_adaptation": 3,
+    "held": 0
+  },
+  "source_verification": {
+    "public_reference_repository": "https://github.com/mattpocock/skills",
+    "public_reference_revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+    "public_reference_license": "MIT",
+    "matched_skills": 36,
+    "original_install_revision_known": false
+  },
+  "findings": [
+    "未发现真实凭据、个人绝对路径、内网地址或账号信息。",
+    "git-workflow 的公司自建 GitLab 示例已替换为 git.example.com；原 Skill 未修改。",
+    "tdd 的 /users/ 路径是示例 API 路由，保留。",
+    "课程、Claude CLI、Git 托管账号等运行依赖不随仓库分发。",
+    "不读取系统认证文件，不复制浏览器登录态或会话历史。"
+  ],
+  "skills": [
+    {
+      "name": "ask-matt",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "code-review",
+        "codebase-design",
+        "diagnosing-bugs",
+        "domain-modeling",
+        "grill-me",
+        "grill-with-docs",
+        "grilling",
+        "handoff",
+        "implement",
+        "improve-codebase-architecture",
+        "prototype",
+        "research",
+        "resolving-merge-conflicts",
+        "setup-matt-pocock-skills",
+        "tdd",
+        "teach",
+        "to-questionnaire",
+        "to-spec",
+        "to-tickets",
+        "triage",
+        "wait-what",
+        "wayfinder",
+        "wizard",
+        "writing-for-agents"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 3
+    },
+    {
+      "name": "claude-handoff",
+      "status": "needs_adaptation",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "Claude CLI"
+      ],
+      "runtime_note": "需要本机安装并登录 Claude CLI；它交接到 Claude 后台代理，不能直接视作 Codex 原生交接。",
+      "source_file_count": 2
+    },
+    {
+      "name": "code-review",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "setup-matt-pocock-skills"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "codebase-design",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 4
+    },
+    {
+      "name": "compile-coordinator",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "本机个人来源；仅个人私有归档，未授予新增开源许可",
+      "redaction_actions": [
+        "保留来源限制；未新增开源许可"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "Python 3 standard library",
+        "macOS or Linux"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 5
+    },
+    {
+      "name": "diagnosing-bugs",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 3
+    },
+    {
+      "name": "domain-modeling",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 4
+    },
+    {
+      "name": "git-guardrails-claude-code",
+      "status": "needs_adaptation",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "Claude Code",
+        "Bash",
+        "jq"
+      ],
+      "runtime_note": "操作目标是 Claude Code 的 hook 配置，需要 Claude Code；不适用于 Codex 原生 hook。",
+      "source_file_count": 3
+    },
+    {
+      "name": "git-workflow",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "本机声明作者与 MIT；上游当前无法核实；仅个人私有归档",
+      "redaction_actions": [
+        "SKILL.md: company GitLab example replaced with git.example.com",
+        "scripts/setup.sh: company GitLab example replaced with git.example.com",
+        "保留来源限制；未新增开源许可"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "Git",
+        "GitHub CLI (gh)",
+        "GitLab CLI (glab, optional)"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 4
+    },
+    {
+      "name": "grill-me",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "grilling"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "grill-with-docs",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "domain-modeling",
+        "grilling"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "grilling",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "handoff",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "implement",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "code-review",
+        "tdd"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "implement-spec",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "code-review"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "codebase-design",
+        "domain-modeling",
+        "grilling"
+      ],
+      "external_dependencies": [
+        "Browser for HTML report",
+        "Optional public Mermaid and Tailwind CDN"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 3
+    },
+    {
+      "name": "loop-me",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "grilling"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "Node.js package manager",
+        "@total-typescript/shoehorn",
+        "TypeScript"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "prototype",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 4
+    },
+    {
+      "name": "research",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "resolving-merge-conflicts",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "本机个人来源；仅个人私有归档，未授予新增开源许可",
+      "redaction_actions": [
+        "保留来源限制；未新增开源许可"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "retro",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "writing-for-agents"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "scaffold-exercises",
+      "status": "needs_adaptation",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "pnpm",
+        "ai-hero-cli",
+        "Git"
+      ],
+      "runtime_note": "依赖目标课程项目提供 pnpm ai-hero-cli internal lint；其他项目需替换校验入口。",
+      "source_file_count": 2
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "domain-modeling",
+        "grill-with-docs",
+        "grilling",
+        "improve-codebase-architecture",
+        "prototype",
+        "research",
+        "to-spec",
+        "to-tickets",
+        "triage",
+        "wayfinder"
+      ],
+      "external_dependencies": [
+        "GitHub CLI or GitLab CLI when selected; local Markdown alternative available"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 7
+    },
+    {
+      "name": "setup-pre-commit",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "Node.js package manager",
+        "husky",
+        "lint-staged",
+        "prettier"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "setup-ts-deep-modules",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "codebase-design"
+      ],
+      "external_dependencies": [
+        "TypeScript",
+        "Node.js package manager",
+        "dependency-cruiser"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 3
+    },
+    {
+      "name": "tdd",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "code-review",
+        "codebase-design"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 4
+    },
+    {
+      "name": "teach",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 6
+    },
+    {
+      "name": "to-questionnaire",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "to-spec",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "setup-matt-pocock-skills"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "to-tickets",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "setup-matt-pocock-skills"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "triage",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "domain-modeling",
+        "grilling",
+        "setup-matt-pocock-skills"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 4
+    },
+    {
+      "name": "wait-what",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "wayfinder",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [
+        "domain-modeling",
+        "grilling",
+        "prototype",
+        "research",
+        "setup-matt-pocock-skills"
+      ],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "wizard",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [
+        "Bash",
+        "Optional GitHub CLI for GitHub secrets"
+      ],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 3
+    },
+    {
+      "name": "writing-beats",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "writing-for-agents",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 3
+    },
+    {
+      "name": "writing-fragments",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    },
+    {
+      "name": "writing-shape",
+      "status": "included",
+      "included": true,
+      "upload_scope": "personal-private-repository",
+      "source": "mattpocock/skills；MIT 已核实；本机衍生版本",
+      "redaction_actions": [
+        "附带已核实的上游 MIT LICENSE 与来源记录；保留本机版本及调用策略"
+      ],
+      "skill_dependencies": [],
+      "external_dependencies": [],
+      "runtime_note": "未执行外部账号操作、安装或发布；本轮校验为离线结构与隐私检查。",
+      "source_file_count": 2
+    }
+  ],
+  "validation": {
+    "result": "passed",
+    "json_files": 39,
+    "yaml_files": 38,
+    "skill_frontmatters": 39,
+    "shell_syntax_files": 8,
+    "python_syntax_files": 1,
+    "yaml_parser": "Ruby standard-library Psych safe_load",
+    "source_credentials_read": false,
+    "external_mutations_executed": false
+  }
+}

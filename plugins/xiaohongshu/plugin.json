@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "xiaohongshu",
+  "version": "0.1.0",
+  "description": "个人小红书 Skill + 本地 MCP；可选上游搜索和发布源码。",
+  "author": {
+    "name": "Personal Skills"
+  },
+  "license": "Apache-2.0",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "小红书个人工具",
+        "shortDescription": "编辑上传草稿，附可选搜索发布源码",
+        "longDescription": "本地 Skill 和 MCP：独立浏览器编辑、配图上传与同条草稿保存；附锁定上游的可选搜索与发布源码。搜索发布服务需单独配置，尚未在此打包环境验收。",
+        "developerName": "Personal Skills",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": "帮我准备小红书内容，并按当前可用工具完成搜索、编辑或上传草稿。"
+      },
+      "requires_local_executor": true
+    }
+  }
+}

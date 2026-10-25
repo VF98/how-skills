@@ -1,0 +1,18 @@
+{
+  "python_adapter": {
+    "source": "user-local-personal-project",
+    "source_version": "0.4.0",
+    "license": "Apache-2.0",
+    "copied_runtime_files": 13,
+    "private_runtime_state_included": false,
+    "packaging_changes": [
+      "Portable isolated entrypoint with state outside source tree",
+      "Removed historical account verification dependency from status",
+      "Temporary synthetic media test fixture and fictional native ID",
+      "Portable manifests and rewritten self-contained Skill instructions",
+      "Pre-upload audit replaced an account identifier of unproven fixture origin with an explicit sequential synthetic ID."
+    ]
+  },
+  "optional_go_backend": "See upstream.lock.json and vendor/xiaohongshu-mcp/NOTICE",
+  "installed_or_replaced_existing_service": false
+}

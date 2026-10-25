@@ -1,0 +1,16 @@
+Xiaohongshu Local MVP
+
+This local adapter references public page selectors and note data structures from
+xpzouying/xiaohongshu-mcp, tag v2.5.5, commit
+a5c8f7799980ba1fdd501999843eb2d17e4c9a9f.
+Copyright 2025 xpzouying. Licensed under the Apache License, Version 2.0.
+The upstream license is retained in third_party/xiaohongshu-mcp.LICENSE.
+
+This adapter is a separate Python implementation. It does not run the upstream
+server, bundled browser downloader, publication functions or unmerged draft PR.
+The Python adapter is not an official Xiaohongshu integration and contains no publishing tools.
+
+This distribution additionally includes an unmodified, locked source subset of
+the upstream server in vendor/xiaohongshu-mcp for optional search and publication.
+It is not enabled by the default MCP configuration. See upstream.lock.json and
+vendor/xiaohongshu-mcp/NOTICE for its provenance.

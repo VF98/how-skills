@@ -1,0 +1,13 @@
+xiaohongshu-mcp — selected unmodified upstream source
+
+Source: https://github.com/xpzouying/xiaohongshu-mcp
+Version: v2.5.5
+Commit: a5c8f7799980ba1fdd501999843eb2d17e4c9a9f
+Copyright 2025 xpzouying. Licensed under the Apache License, Version 2.0.
+The full license is retained in LICENSE.
+
+This directory contains a selection of unmodified upstream runtime and test
+sources. It is an optional backend, distinct from the Python local draft
+adapter. No account state, cookies, browser binaries, Git history, or original
+user media is included. The adjacent skill and packaging documentation are
+new integration material, not upstream source.

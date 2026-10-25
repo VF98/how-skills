@@ -1,0 +1,4 @@
+interface:
+  display_name: "飞书操作"
+  short_description: "通过 lark-cli 安全执行飞书文档、消息和协作操作"
+  default_prompt: "Use $lark-ops to complete this Lark/Feishu operation safely."

@@ -1,0 +1,22 @@
+{
+  "classification": "unverifiable-upstream",
+  "distribution": "private-archive-only",
+  "declared_repository": "https://github.com/make-fe-great-again/gitlab-skill-workflow",
+  "declared_author": "make-fe-great-again",
+  "declared_license": "MIT",
+  "verification": "The local SKILL.md declares MIT and author. The declared public repository and LICENSE endpoint returned 404 during this audit; original declaration retained, no new copyright holder or license invented.",
+  "original_local_file_sha256": {
+    "SKILL.md": "d7b13ab71e4c10bce86737dee7e4259b9b6cf19383d028d30c5cd5573182d0d6",
+    "scripts/lib/utils.sh": "a8147f88d5b4146163ba46b52f09963aa734b659f2916fe4614533daeab84b55",
+    "scripts/setup.sh": "a735618ad4d43c31e83eb3e99862ee444d71450f752471bb2d49ac50c6a5fe4b",
+    "scripts/test_setup.sh": "bb7eb2c6cf34a7f52bd46c69b51e0cb4c0f07126567ba218177ecc37659ca1c5"
+  },
+  "packaging_changes": [
+    "Replaced organization-specific host examples with git.example.com.",
+    "Removed whitespace from blank lines for clean Git diffs.",
+    "Added visible declared-source attribution without asserting upstream license verification.",
+    "Pre-upload audit replaced unnecessary real third-party self-hosted GitLab test domains with gitlab.example.com.",
+    "Pre-upload audit switched runtime glab token input to hidden shell input and stdin; documentation uses interactive login instead of credential argv."
+  ],
+  "credential_input_reference": "https://docs.gitlab.com/cli/auth/login/"
+}

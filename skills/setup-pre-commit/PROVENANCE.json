@@ -1,0 +1,31 @@
+{
+  "classification": "public-upstream-local-derivative",
+  "repository": "https://github.com/mattpocock/skills",
+  "reference_revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+  "reference_path": "skills/misc/setup-pre-commit",
+  "reference_is_original_install_revision": false,
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Matt Pocock",
+  "license_file": "LICENSE",
+  "verification": "Public repository and MIT LICENSE verified; local version retained and compared by file. Reference revision identifies comparison source, not an asserted original installation revision.",
+  "comparison": {
+    "identical_files": [
+      "SKILL.md",
+      "agents/openai.yaml"
+    ],
+    "different_files": [],
+    "local_only_files": []
+  },
+  "original_local_file_sha256": {
+    "SKILL.md": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+    "agents/openai.yaml": "acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1"
+  },
+  "upstream_license_url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+  "license_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+  "comparison_scope": "Local snapshot before repository attribution annotations; original installation revision remains unknown.",
+  "packaging_changes": [
+    "Added visible original-author/source/license attribution to SKILL.md.",
+    "Added MIT and upstream provenance metadata; workflow body and invocation policy retained."
+  ],
+  "attribution_notice": "SKILL.md"
+}

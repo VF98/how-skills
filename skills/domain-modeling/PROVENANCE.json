@@ -1,0 +1,37 @@
+{
+  "classification": "public-upstream-local-derivative",
+  "repository": "https://github.com/mattpocock/skills",
+  "reference_revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+  "reference_path": "skills/engineering/domain-modeling",
+  "reference_is_original_install_revision": false,
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Matt Pocock",
+  "license_file": "LICENSE",
+  "verification": "Public repository and MIT LICENSE verified; local version retained and compared by file. Reference revision identifies comparison source, not an asserted original installation revision.",
+  "comparison": {
+    "identical_files": [
+      "ADR-FORMAT.md",
+      "agents/openai.yaml"
+    ],
+    "different_files": [
+      "SKILL.md"
+    ],
+    "local_only_files": [
+      "CONTEXT-FORMAT.md"
+    ]
+  },
+  "original_local_file_sha256": {
+    "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+    "CONTEXT-FORMAT.md": "17ab16ce783e4d2801ee52fd9acdf550cbf44de65ae76797a93943bbedf22a13",
+    "SKILL.md": "327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e",
+    "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+  },
+  "upstream_license_url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+  "license_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+  "comparison_scope": "Local snapshot before repository attribution annotations; original installation revision remains unknown.",
+  "packaging_changes": [
+    "Added visible original-author/source/license attribution to SKILL.md.",
+    "Added MIT and upstream provenance metadata; workflow body and invocation policy retained."
+  ],
+  "attribution_notice": "SKILL.md"
+}

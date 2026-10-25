@@ -1,0 +1,34 @@
+{
+  "classification": "public-upstream-local-derivative",
+  "repository": "https://github.com/mattpocock/skills",
+  "reference_revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+  "reference_path": "skills/engineering/ask-matt",
+  "reference_is_original_install_revision": false,
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Matt Pocock",
+  "license_file": "LICENSE",
+  "verification": "Public repository and MIT LICENSE verified; local version retained and compared by file. Reference revision identifies comparison source, not an asserted original installation revision.",
+  "comparison": {
+    "identical_files": [
+      "PHASE-BOUNDARIES.md"
+    ],
+    "different_files": [
+      "SKILL.md",
+      "agents/openai.yaml"
+    ],
+    "local_only_files": []
+  },
+  "original_local_file_sha256": {
+    "PHASE-BOUNDARIES.md": "a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
+    "SKILL.md": "5a81061458f83ca0c365b9f2dc40606519a0a93a29c3fa1e5874baf3116b008c",
+    "agents/openai.yaml": "5aa16f13cddad98f8d6ffd99dace77498f66b62459dad37c47be2f3d901f5a64"
+  },
+  "upstream_license_url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE",
+  "license_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+  "comparison_scope": "Local snapshot before repository attribution annotations; original installation revision remains unknown.",
+  "packaging_changes": [
+    "Added visible original-author/source/license attribution to SKILL.md.",
+    "Added MIT and upstream provenance metadata; workflow body and invocation policy retained."
+  ],
+  "attribution_notice": "SKILL.md"
+}

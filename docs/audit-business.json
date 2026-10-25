@@ -1,0 +1,579 @@
+{
+  "scope": "本机个人技能目录中的业务、设备及企业服务技能；不含系统技能、插件缓存或凭据存储。",
+  "as_of": "2026-10-25",
+  "review_method": [
+    "逐个读取纳入范围的全部普通源文件，检查文档、references、scripts 与代理元数据。",
+    "只读正则扫描用于发现路径、网络值、对象标识和疑似凭据；长标识命中可能是占位符或代码字段，不直接认定为真实秘密。",
+    "核对相对文件依赖，并用 AST 解析 Python 源码；未运行设备操作、登录或联网请求。",
+    "未读取 netrc、认证缓存、浏览器资料或 Keychain；原文件保持不变。",
+    "个人自建 Skill 可按私人归档范围保留原声明；缺少新增开源许可本身不阻止个人私有归档。"
+  ],
+  "summary": {
+    "skills_reviewed": 14,
+    "files_reviewed": 147,
+    "bytes_reviewed": 945074,
+    "included": 1,
+    "needs_adaptation": 6,
+    "held": 7,
+    "python_files_ast_checked": 8,
+    "confirmed_embedded_credentials": 0,
+    "credential_assessment": "未发现可确认的明文密钥、密码或私钥；这不是对原始部署环境的全量秘密审计。",
+    "copied_files": 3
+  },
+  "priority_candidates": [
+    "lark-ops",
+    "private-gitlab-ops",
+    "robot-ssh-bridge-deploy"
+  ],
+  "entries": [
+    {
+      "name": "a3-ultra-wired-fota",
+      "status": "held",
+      "copied": false,
+      "file_count": 2,
+      "byte_count": 5416,
+      "decision": "专用固件部署与多板恢复流程；依赖设备型号、刷机入口和板级验证语义。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "专有设备流程",
+        "设备固件与恢复策略"
+      ],
+      "dependencies": [
+        "专用机器人 CLI",
+        "设备管理通道",
+        "固件归档与刷机工具"
+      ],
+      "required_actions": [
+        "确认流程与内容的归属和可迁出范围；如需个人化，另写通用固件分阶段验证 Skill。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 0,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 2,
+        "categories": {
+          "skill-entry": 1,
+          "agent-metadata": 1
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "agi-auto-dev",
+      "status": "held",
+      "copied": false,
+      "file_count": 4,
+      "byte_count": 18548,
+      "decision": "编排紧耦合内部交付、包产出与台架验证规则，不能仅删域名后当作通用开发流程。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "内部研发交付规则",
+        "公司 Skill 依赖"
+      ],
+      "dependencies": [
+        "agi-delivery-guide",
+        "Git 与 CI 客户端",
+        "项目与台架服务"
+      ],
+      "required_actions": [
+        "把通用需求分析、实现、CI 证据闭环拆成新 Skill；业务门禁留在原环境。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 1,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 0,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 4,
+        "categories": {
+          "skill-entry": 1,
+          "agent-metadata": 1,
+          "reference": 2
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "agi-delivery-guide",
+      "status": "held",
+      "copied": false,
+      "file_count": 26,
+      "byte_count": 104028,
+      "decision": "含内部服务入口、产品配置、项目/工具标识、交付约定与台架认证流程。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "内部服务与仓库结构",
+        "产品和测试基础设施",
+        "认证配置引用",
+        "业务标识示例"
+      ],
+      "dependencies": [
+        "内部项目/代码托管/台架服务",
+        "产品配置与多仓工具",
+        "机器人 CLI"
+      ],
+      "required_actions": [
+        "确认组织内容授权；只提炼不含组织知识的通用方法，不复制整套 reference。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 53,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 6,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 26,
+        "categories": {
+          "skill-entry": 1,
+          "agent-metadata": 1,
+          "reference": 21,
+          "script": 3
+        }
+      },
+      "python_ast_checked_count": 2
+    },
+    {
+      "name": "aimcli-inspect-a3u-map",
+      "status": "held",
+      "copied": false,
+      "file_count": 3,
+      "byte_count": 21927,
+      "decision": "主体已参数化且只读，但脚本依赖专用机器人命令与地图模型。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "专有设备命令和地图数据结构"
+      ],
+      "dependencies": [
+        "机器人 CLI",
+        "目标设备连接与授权",
+        "设备地图接口"
+      ],
+      "required_actions": [
+        "确认接口与脚本可迁出后，以外部参数和合成地图例子建立独立项目。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 0,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 3,
+        "categories": {
+          "skill-entry": 1,
+          "agent-metadata": 1,
+          "script": 1
+        }
+      },
+      "python_ast_checked_count": 1
+    },
+    {
+      "name": "aimcli-robot-ops",
+      "status": "held",
+      "copied": false,
+      "file_count": 4,
+      "byte_count": 21755,
+      "decision": "附带部署脚本与固化板级网络值，依赖专用升级命令。密码来自环境引用，未见硬编码密码。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "私网地址",
+        "专有部署指令",
+        "凭据环境变量引用"
+      ],
+      "dependencies": [
+        "机器人 CLI",
+        "SSH 与设备管理权限",
+        "专用应用包升级机制"
+      ],
+      "required_actions": [
+        "把板地址、包路径和所有设备选择移到本地配置；确认专有流程归属后再提炼。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 6,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 0,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 4,
+        "categories": {
+          "skill-entry": 1,
+          "agent-metadata": 1,
+          "reference": 1,
+          "script": 1
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "lark-doc",
+      "status": "needs_adaptation",
+      "copied": false,
+      "file_count": 19,
+      "byte_count": 145749,
+      "decision": "通用文档操作说明可重用，但共享技能及若干关联域缺失，整体许可来源未附带；存在需核对的长标识例子。",
+      "license_and_provenance": "仅 scripts/doc_word_stat.py 明示 MIT 与第三方版权；该标记不能覆盖整套 Skill。",
+      "risk_categories": [
+        "样例资源标识待核对",
+        "第三方文档来源待确认",
+        "缺失跨 Skill 依赖"
+      ],
+      "dependencies": [
+        "lark-cli",
+        "lark-shared",
+        "lark-drive",
+        "文档内嵌资源对应域 Skill"
+      ],
+      "required_actions": [
+        "优先由已安装 CLI 按版本读取原生技能；本库只保存薄路由，或补齐获许可来源、共享依赖并替换为合成标识。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 2,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 19,
+        "categories": {
+          "skill-entry": 1,
+          "reference": 17,
+          "script": 1
+        }
+      },
+      "python_ast_checked_count": 1
+    },
+    {
+      "name": "lark-drive",
+      "status": "needs_adaptation",
+      "copied": false,
+      "file_count": 41,
+      "byte_count": 357390,
+      "decision": "通用云盘/权限/评论说明，无确认的凭据，但含多处资源/版本等样例标识并依赖缺失共享技能。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "样例资源与版本标识待核对",
+        "缺失跨 Skill 依赖",
+        "第三方文档来源待确认"
+      ],
+      "dependencies": [
+        "lark-cli",
+        "lark-shared",
+        "lark-doc",
+        "部分表格/知识库/Markdown 域 Skill"
+      ],
+      "required_actions": [
+        "采用 CLI 当前内置技能，避免无来源复制大体量命令文档；保留最小自有路由。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 14,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 41,
+        "categories": {
+          "skill-entry": 1,
+          "reference": 40
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "lark-ops",
+      "status": "included",
+      "copied": true,
+      "file_count": 2,
+      "byte_count": 3137,
+      "decision": "无嵌入个人账号、固定域名或资源标识，只有外部 CLI 依赖；按个人私有归档范围保留原文和声明。",
+      "license_and_provenance": "local-personal-source / no-new-open-source-license；不声明额外开源许可，不断言第三方来源。",
+      "risk_categories": [],
+      "dependencies": [
+        "lark-cli",
+        "CLI 按版本提供的共享/各域技能"
+      ],
+      "required_actions": [],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 0,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "destination": "skills/lark-ops",
+      "reviewed_file_summary": {
+        "count": 2,
+        "categories": {
+          "skill-entry": 1,
+          "agent-metadata": 1
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "lark-wiki",
+      "status": "needs_adaptation",
+      "copied": false,
+      "file_count": 13,
+      "byte_count": 60380,
+      "decision": "通用知识库接口说明，但含长数字样例标识；共享技能和部分域依赖缺失。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "样例空间/成员标识待核对",
+        "缺失跨 Skill 依赖",
+        "第三方文档来源待确认"
+      ],
+      "dependencies": [
+        "lark-cli",
+        "lark-shared",
+        "lark-doc",
+        "lark-drive"
+      ],
+      "required_actions": [
+        "使用内置技能或补齐许可与依赖；把标识统一改为明显的合成占位示例。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 25,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 13,
+        "categories": {
+          "skill-entry": 1,
+          "reference": 12
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "meegle",
+      "status": "needs_adaptation",
+      "copied": false,
+      "file_count": 20,
+      "byte_count": 154834,
+      "decision": "通用项目管理说明与 SOP 较完整，但样例包含人员/模板/计划表等长标识且无完整来源记录。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "样例人员和业务对象标识待核对",
+        "第三方文档来源待确认"
+      ],
+      "dependencies": [
+        "Meegle CLI",
+        "已授权项目账号与空间配置"
+      ],
+      "required_actions": [
+        "替换全部非明显占位的业务对象标识；优先使用 CLI 自带版本化文档，确认整体许可再复制。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 18,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 20,
+        "categories": {
+          "skill-entry": 1,
+          "reference": 19
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "private-gitlab-ops",
+      "status": "needs_adaptation",
+      "copied": false,
+      "file_count": 2,
+      "byte_count": 5047,
+      "decision": "小型 helper 能通用化；文档及脚本固定公司默认主机，并记录特定本机 Git 策略。未读取任何凭据文件。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "内部默认主机",
+        "本机认证和 Git 策略"
+      ],
+      "dependencies": [
+        "Python 标准库",
+        "curl",
+        "用户自行维护的 netrc",
+        "GitLab HTTPS API"
+      ],
+      "required_actions": [
+        "将主机改为必填参数或外部环境配置；示例使用保留域名，删除个人 Git 重写约定；补充来源/作者记录。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 5,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 0,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 2,
+        "categories": {
+          "skill-entry": 1,
+          "script": 1
+        }
+      },
+      "python_ast_checked_count": 1
+    },
+    {
+      "name": "robot-ssh-bridge-deploy",
+      "status": "needs_adaptation",
+      "copied": false,
+      "file_count": 2,
+      "byte_count": 8423,
+      "decision": "流程主体使用参数和 SSH 别名，迁移价值高；参考文件仍含历史专用别名与本地工具约定。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "历史主机别名",
+        "本地隧道与部署工具约定"
+      ],
+      "dependencies": [
+        "SSH",
+        "rsync",
+        "SFTP",
+        "用户配置的反向隧道"
+      ],
+      "required_actions": [
+        "把主机别名、转发端口、服务名和本机 helper 作为外部输入；剥离历史现场说明并确认内容归属。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 2,
+        "potential_object_identifiers": 0,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 2,
+        "categories": {
+          "skill-entry": 1,
+          "reference": 1
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "robot-via-mac-deploy",
+      "status": "held",
+      "copied": false,
+      "file_count": 2,
+      "byte_count": 10774,
+      "decision": "参考文件含具体个人主机拓扑、私网地址、用户目录和历史部署记录，且与另一个桥接 Skill 重复。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "个人主机拓扑",
+        "私网地址",
+        "用户目录",
+        "历史设备/部署标识"
+      ],
+      "dependencies": [
+        "固定工作区 SSH 配置",
+        "本地隧道脚本",
+        "SSH 与 rsync",
+        "设备服务"
+      ],
+      "required_actions": [
+        "不复制此现场快照；合并可复用原则到参数化桥接方案，现场值仅保存于未跟踪的本机配置。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 1,
+        "private_ips": 4,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 37,
+        "potential_object_identifiers": 3,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 2,
+        "categories": {
+          "skill-entry": 1,
+          "reference": 1
+        }
+      },
+      "python_ast_checked_count": 0
+    },
+    {
+      "name": "spatial-guidance-mock-inject",
+      "status": "held",
+      "copied": false,
+      "file_count": 7,
+      "byte_count": 27666,
+      "decision": "脚本直接依赖组织内运行时协议及生成代码，参考文件包含实际地图摘要与现场验收语义。",
+      "license_and_provenance": "未见本技能的许可证或可核验上游来源。",
+      "risk_categories": [
+        "专有协议与运行时配置",
+        "历史地图摘要及现场记录"
+      ],
+      "dependencies": [
+        "专用运行时和生成协议模块",
+        "设备管理连接",
+        "正式配置与空间数据服务"
+      ],
+      "required_actions": [
+        "先确认协议、脚本和地图素材归属；若需要演示，另写公开协议与纯合成场景版本。"
+      ],
+      "scan_counts": {
+        "absolute_user_paths": 0,
+        "private_ips": 0,
+        "corporate_domain_mentions": 0,
+        "personal_host_alias_mentions": 0,
+        "potential_object_identifiers": 6,
+        "embedded_secret_pattern": 0,
+        "private_key_pattern": 0
+      },
+      "reviewed_file_summary": {
+        "count": 7,
+        "categories": {
+          "skill-entry": 1,
+          "agent-metadata": 1,
+          "reference": 2,
+          "script": 3
+        }
+      },
+      "python_ast_checked_count": 3
+    }
+  ],
+  "report_redaction": "Pre-upload audit retains per-skill file counts and categories only; internal product-specific filenames and reference paths are excluded."
+}
